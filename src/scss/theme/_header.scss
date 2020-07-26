@@ -1,0 +1,33 @@
+.header {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu-list {
+        
+        @media (min-width: 992px) {
+            li {
+                display: inline-block;
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: $color-green;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

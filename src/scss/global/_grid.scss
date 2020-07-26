@@ -1,0 +1,47 @@
+.Grid {
+    min-width: fit-content;
+    padding: 0 25px;
+    position: relative;
+
+    @media (min-width: 992px) {
+        margin: 0 auto;
+    }
+
+    @media (min-width: 1240px) {
+        max-width: 1000px;
+        min-width: 1000px;
+    }
+
+    @media (min-width: 992px) {
+        &--Full {
+            min-width: 100%;
+            max-width: 100%;
+            padding: 0;
+            grid-gap: 0!important;
+        }
+    }
+
+    &--Wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 25px;
+
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 100px;
+
+            &--Third {
+                grid-template-columns: 1fr 1fr 1fr;
+
+                .Content--Box {
+                    grid-column: span 2;
+                }
+            }
+
+            &--Four {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}

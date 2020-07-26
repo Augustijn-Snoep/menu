@@ -1,0 +1,57 @@
+// 
+button { @include reset-input;}
+// 
+.my-10 {margin-top: 10px;margin-bottom: 10px;}
+.my-15 {margin-top: 15px;margin-bottom: 15px;}
+.my-20 {margin-top: 20px;margin-bottom: 20px;}
+.np-r {padding-right: 0;}
+.np-l {padding-left: 0;}
+// 
+.mt-10 {margin-top: 10px!important;}
+.mt-20 {margin-top: 20px!important;}
+.mt-30 {margin-top: 30px!important;}
+.mt-40 {margin-top: 40px!important;}
+.mt-50 {margin-top: 50px!important;}
+.mt-60 {margin-top: 60px!important;}
+// 
+.mb-10 {margin-bottom: 10px!important;}
+.mb-15 {margin-bottom: 15px!important;}
+.mb-20 {margin-bottom: 20px!important;}
+.mb-25 {margin-bottom: 25px!important;}
+.mb-30 {margin-bottom: 30px!important;}
+.mb-40 {margin-bottom: 40px!important;}
+.mb-50 {margin-bottom: 50px!important;}
+.mb-100 {margin-bottom: 100px!important;}
+
+.nd {
+    text-decoration: none;
+    list-style: none;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.JC {
+    display: flex;
+    justify-content: center;
+}
+
+.AC {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+.footer {
+    padding: 100px 0 205px;
+    background-color: $color-green;
+    color: $color-blue;
+    
+    p,a,span {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-weight: 700;
+    }
+
+    ul {
+        margin-top: 16px;
+
+        li {
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__description {
+        p {
+            font-weight: 700;
+        }
+
+        a {
+            margin-top: 20px;
+            display: inline-block;
+        }
+    }
+
+    &__opening {
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+}
